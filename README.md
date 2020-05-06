@@ -78,10 +78,11 @@ Done
 
 
 # CREDITS
-Parshit Team - https://github.com/Para-SHIT
-Erza Triana
-Nasim Ni
-wallpaperplay.com
+
+# Parshit Team - https://github.com/Para-SHIT
+# Erza Triana
+# Nasim Ni
+# wallpaperplay.com
 
 
  
