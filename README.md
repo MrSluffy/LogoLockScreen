@@ -8,7 +8,7 @@ In Package SystemUi
 
 Navigate and open  SystemUI/res-keyguard/keguard_clock_switch.xml
 
-And Replace with my keyguard_clock_switch.xml
+And Replace it with my keyguard_clock_switch.xml
 
 # Step-2 
 
