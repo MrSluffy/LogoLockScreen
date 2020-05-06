@@ -17,7 +17,7 @@ In Package Settings
 Put this in LockScreen pref xml 
 
 
- <ListPreference android:entries="@array/lockscreen_logo_type_entries" android:title="Lockscreen Logo Style" android:key="logo_type" android:defaultValue="3" android:entryValues="@array/lockscreen_logo_type_values" />
+# <ListPreference android:entries="@array/lockscreen_logo_type_entries" android:title="Lockscreen Logo Style" android:key="logo_type" android:defaultValue="3" android:entryValues="@array/lockscreen_logo_type_values" />
  
  
  and in Array.xml
