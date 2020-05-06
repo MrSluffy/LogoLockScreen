@@ -16,15 +16,15 @@ In Package Settings
 
 Put this in LockScreen pref xml 
 
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen>
+
   
-  <--yourPref-->
+  <-yourPref->
   
    <ListPreference android:entries="@array/lockscreen_logo_type_entries" android:title="Lockscreen Logo Style" android:key="logo_type" android:defaultValue="3" android:entryValues="@array/lockscreen_logo_type_values" />
    
    
-   </PreferenceScreen>" />
+   </PreferenceScreen>"/>
  
  
  and in Array.xml
