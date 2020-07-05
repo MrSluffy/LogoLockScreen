@@ -1,4 +1,4 @@
-# Simple Clock Lockscreen Style with Custom Logo
+# Add Custom Logo In lockscreen
 
 # How to set this up 
 
