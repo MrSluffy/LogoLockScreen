@@ -16,19 +16,21 @@ In Package Settings
 
 Put this in LockScreen pref xml 
 
+# Insert This
+
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android">
-  
-+
+
     <ListPreference android:entries="@array/lockscreen_logo_type_entries" android:title="Lockscreen Logo Style" android:key="logo_type" android:defaultValue="3" android:entryValues="@array/lockscreen_logo_type_values" />
            
 </PreferenceScreen>
  
  
- and in Array.xml
+
  
- +
+# Insert this in Array.xml
+ 
      <string-array name="lockscreen_logo_type_entries">
         <item>OFF</item>
         <item>LockScrenLogo1</item>
