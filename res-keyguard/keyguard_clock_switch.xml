@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.KeyguardClockSwitch
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/keyguard_clock_container"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+		
 <!--
 **
-** Copyright 2018, The Android Open Source Project
+** Copyright 2020, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License")
 ** you may not use this file except in compliance with the License.
@@ -18,60 +24,68 @@
 -->
 
 <!-- This is a view that shows clock information in Keyguard. -->
-<com.android.keyguard.KeyguardClockSwitch
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/keyguard_clock_container"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal|top">
-    	
-    <com.customlogo.lockscreen.LogoLockScreen
-						android:scaleType="centerCrop"
-						android:layout_gravity="center"
-						android:layout_width="wrap_content"
-						android:layout_height="250dp"/>
-						    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
-    <FrameLayout
-         android:id="@+id/clock_view"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_gravity="center_horizontal"
-         android:layout_alignParentTop="true">
-        <TextClock
-             android:id="@+id/default_clock_view"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_gravity="center_horizontal"
-             android:gravity="center_horizontal"
-             android:paddingBottom="@dimen/title_clock_padding"
-             android:letterSpacing="0.02"
-             android:textColor="?attr/wallpaperTextColor"
-             android:singleLine="true"
-             style="@style/widget_big"
-             android:format12Hour="@string/keyguard_widget_12_hours_format"
-             android:format24Hour="@string/keyguard_widget_24_hours_format"
-             android:elegantTextHeight="false"
-        />
-        <TextClock
-             android:id="@+id/default_clock_view_bold"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_gravity="bottom|center_horizontal"
-             android:gravity="center_horizontal"
-             android:letterSpacing="0.03"
-             android:textColor="?attr/wallpaperTextColor"
-             android:singleLine="true"
-             style="@style/widget_title_bold"
-             android:format12Hour="@string/keyguard_widget_12_hours_format"
-             android:format24Hour="@string/keyguard_widget_24_hours_format"
-             android:elegantTextHeight="false"
-             android:visibility="invisible"
-             />
-    </FrameLayout>
-    <include layout="@layout/keyguard_status_area"
-        android:id="@+id/keyguard_status_area"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/clock_view" />
-     </RelativeLayout>
+	
+	<com.customlogo.lockscreen.LogoLockScreen
+		android:scaleType="centerCrop"
+		android:layout_gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="250dp"
+		android:layout_centerInParent="true"/>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true">
+
+		<FrameLayout
+			android:id="@+id/clock_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_alignParentTop="true">
+
+			<TextClock
+				android:id="@+id/default_clock_view"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:gravity="center_horizontal"
+				android:paddingBottom="@dimen/title_clock_padding"
+				android:letterSpacing="0.02"
+				android:textColor="?attr/wallpaperTextColor"
+				android:singleLine="true"
+				style="@style/widget_big"
+				android:format12Hour="@string/keyguard_widget_12_hours_format"
+				android:format24Hour="@string/keyguard_widget_24_hours_format"
+				android:elegantTextHeight="false"/>
+
+			<TextClock
+				android:id="@+id/default_clock_view_bold"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom|center_horizontal"
+				android:gravity="center_horizontal"
+				android:letterSpacing="0.03"
+				android:textColor="?attr/wallpaperTextColor"
+				android:singleLine="true"
+				style="@style/widget_title_bold"
+				android:format12Hour="@string/keyguard_widget_12_hours_format"
+				android:format24Hour="@string/keyguard_widget_24_hours_format"
+				android:elegantTextHeight="false"
+				android:visibility="invisible"/>
+
+		</FrameLayout>
+		
+		<!--Please Compare-->
+
+		<include
+			layout="@layout/keyguard_status_area"
+			android:id="@+id/keyguard_status_area"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/clock_view"/>
+
+	</RelativeLayout>
+
 </com.android.keyguard.KeyguardClockSwitch>
+
